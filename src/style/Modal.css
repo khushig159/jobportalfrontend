@@ -1,0 +1,68 @@
+dialog.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    padding: 0;
+    background: transparent;
+    z-index: 1000;
+  }
+  
+  .modal-box {
+    background: #fff6f6;
+    padding: 2rem;
+    border-radius: 8px;
+    /* width: 400px; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .close-btn,
+  .confirm-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-btn {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .confirm-btn {
+    background-color: #e62222fe;
+    color: white;
+    font-family: 'DM sans',sans-serif;
+    /* width: 200px; */
+    transition: 0.2s all ease;
+  }
+  .confirm-btn:hover {
+    background-color: #f66d6dfe;
+    color: white;
+    font-family: 'DM sans',sans-serif;
+    /* width: 200px; */
+  }
+  
+  .modal-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+  }
+  
+  .modal-form input,
+  .modal-form textarea {
+    margin-top: 4px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+  }
+  

@@ -1,0 +1,24 @@
+.container{
+    margin-top: 0;
+    padding-top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: start; */
+    justify-content: center;
+}
+.container img{
+    width: 80%;
+}
+
+p{
+    color: #888;
+    font-family: 'Work sans',sans-serif;
+}
+a{
+    color: #04268d;
+    font-family: 'Work sans',sans-serif;
+}

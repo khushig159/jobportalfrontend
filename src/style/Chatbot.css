@@ -1,0 +1,203 @@
+/*.chat-container{
+    padding-top: 20px; 
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.upperSideTop{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.chatbot-logo{
+    width: 50px;
+    border-radius: 50px;
+}
+.sidebar{
+    padding-top: 20px;
+    flex:1;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+.main{
+    padding-top: 20px;
+    flex:9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+*/
+body {
+    font-family: 'Inter', 'Noto Sans', sans-serif;
+  }
+  /* For the whole page */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+  .chat-main{
+    /* border: 1px solid #e0e0e0; */
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 0px 240px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+  }
+  .chat-heading {
+    font-family: 'work sans', sans-serif;
+    text-align: center;
+    font-size: 28px;
+    color: #111518;
+    font-weight: 600;
+    /* margin-bottom: 70px; */
+    margin-top: 70px;
+    /* position: fixed; */
+  }
+  .chat-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: static; /* position: fixed; */
+  }
+  .chat-buttons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .chat-buttons button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #edf6f9;
+    color: #111518;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+    .chat-buttons button:hover{
+        background-color: #d0e4f2;
+    }
+  .chat-bubble-left {
+    width: 80vw;
+    max-width: 1000px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 50px;
+  }
+  .chat-bubble-right{
+    /* width: 80vw; */
+    max-width: 1000px;
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  
+  .bubble-img {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 999px;
+    flex-shrink: 0;
+  }
+
+  .img1 {
+    background-image: url("https://img.freepik.com/free-vector/cartoon-style-robot-vectorart_78370-4103.jpg?uid=R124924140&ga=GA1.1.250133232.1718623156&semt=ais_hybrid&w=740");
+  }
+  .img2 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_eM1qQol09NvagG1H1eF3eSpI29S3Yp1cy5EQdjle2CMtVDllF47ZRnPr1oACCT7_rQX67VUC14JlRHCCI8XOJO7qekJkNEw1vR8Lesxx26LbL_xncN1RNXctLrgsKk40x9qxPN5MWOOxOM9EVwGxAYWsOeDSiXFWcTAZH0dzcRqzsdzVVAgessdyz4AWiBoYvpwW9cNaoxIvUWpGjmQ3X6EoEbguWcGqKQneiGO0n_N-bEvOLx1kaVa3PcU6Jz659HQMNheVBK-z");
+  }
+  .img3 {
+    background-image: url("https://img.freepik.com/free-vector/cartoon-style-robot-vectorart_78370-4103.jpg?uid=R124924140&ga=GA1.1.250133232.1718623156&semt=ais_hybrid&w=740");
+  }
+  
+  .bubble-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 460px;
+  }
+  
+  .name {
+    font-size: 13px;
+    color: #60768a;
+    margin-bottom: 4px;
+  }
+  
+  .name.right {
+    text-align: right;
+  }
+  
+  .msg {
+    background: #f0f2f5;
+    color: #111518;
+    padding: 12px 16px;
+    border-radius: 16px;
+    font-size: 1rem;
+  }
+  
+  .msg-right {
+    background: #6eb2f1;
+    color: white;
+  }
+  
+  .button-options {
+    padding: 16px 0;
+    display: flex;
+    gap: 12px;
+  }
+  
+  .button-options button {
+    padding: 8px 16px;
+    border-radius: 999px;
+    background-color: #f0f2f5;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #111518;
+  }
+  
+  .chat-input {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-top: 76px;
+    width: 60vw;
+
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: none;
+    background: #f0f2f5;
+    font-size: 1rem;
+  }
+  
+  .send-btn {
+    padding: 8px 16px;
+    border-radius: 999px;
+    background-color: #0b80ee;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
+  

@@ -1,0 +1,331 @@
+.chatMain {
+    width: 100vw;
+    /* height: 100vh; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0px 170px;
+    margin-left: 240px;
+    /* padding-left: 250px; */
+    /* margin-top: 20px; */
+  }
+ 
+  .msg p {
+    margin: 0.5rem 0;
+    font-family: 'DM sans',sans-serif;
+  }
+  
+  .msg ul {
+    padding-left: 1.2rem;
+    list-style-type: disc;
+    font-family: 'DM sans',sans-serif;
+  }
+  
+  .msg strong {
+    font-weight: bold;
+    font-family: 'DM sans',sans-serif;
+  }
+  
+  .msg em {
+    font-style: italic;
+    font-family: 'DM sans',sans-serif;
+  }
+  .msg {
+    margin-bottom: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: 'DM sans',sans-serif;
+
+  }
+  
+  .msgRight {
+    text-align: right;
+    font-family: 'DM sans',sans-serif;
+
+  }
+  
+  .strong {
+    font-weight: bold;
+    font-family: 'DM sans',sans-serif;
+
+  }
+  
+  .list {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+    font-family: 'DM sans',sans-serif;
+
+  }
+  
+  .listItem {
+    margin-bottom: 0.25rem;
+    font-family: 'DM sans',sans-serif;
+
+  }
+    
+  .chatHeading {
+    font-family: 'DM sans',sans-serif;
+    text-align: center;
+    font-size: 28px;
+    color: #111518;
+    font-weight: 600;
+    /* margin-bottom: 10px; */
+    /* margin-top: 70px; */
+  }
+  
+  .chatHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    margin-bottom: 30px;
+    font-size: 10px;
+    z-index: 1;
+  }
+  .chatHeader h2{
+  font-size: 28px;
+  font-family: 'DM sans',sans-serif;
+  color: #4c4c4c;
+  }
+  
+  .chatButtons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .chatButtons button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #edf6f9;
+    color: #111518;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .chatButtons button:hover {
+    background-color: #d0e4f2;
+  }
+  
+  .chatBubbleLeft {
+    width: 80vw;
+    max-width: 1000px;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 50px;
+  }
+  
+  .chatBubbleRight {
+    max-width: 1000px;
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+  
+  .bubbleImg {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 999px;
+    flex-shrink: 0;
+  }
+  
+  .img1 {
+    background-image: url("https://img.freepik.com/free-vector/cartoon-style-robot-vectorart_78370-4103.jpg");
+  }
+  
+  .img2 {
+    background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_eM1qQol09NvagG1H1eF3eSpI29S3Yp1cy5EQdjle2CMtVDllF47ZRnPr1oACCT7_rQX67VUC14JlRHCCI8XOJO7qekJkNEw1vR8Lesxx26LbL_xncN1RNXctLrgsKk40x9qxPN5MWOOxOM9EVwGxAYWsOeDSiXFWcTAZH0dzcRqzsdzVVAgessdyz4AWiBoYvpwW9cNaoxIvUWpGjmQ3X6EoEbguWcGqKQneiGO0n_N-bEvOLx1kaVa3PcU6Jz659HQMNheVBK-z");
+  }
+  .iconnn{
+    color: #fafafa;
+    background-color: #9a9898;
+    padding: 10px;
+    /* margin-top: 2px; */
+    border-radius: 50%;
+  }
+  
+  .bubbleContent {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+  }
+  
+  .msg {
+    background: #f0f2f5;
+    color: #111518;
+    padding: 12px 16px;
+    border-radius: 16px;
+    font-size: 14px;
+    color: #565656;
+    font-family: 'DM sans',sans-serif;
+  }
+  
+  .msgRight {
+    background: #6eb2f1;
+    color: white;
+  }
+  
+  .chatInput {
+    
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding-top: 76px;
+    width: 60vw;
+    margin-bottom: 30px;
+  }
+  
+  .chatInput input {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: none;
+    background: #f0f2f5;
+    font-size: 1rem;
+    font-size: 13px;
+    font-family: 'DM sans',sans-serif;
+  }
+  
+  .sendBtn {
+
+    padding: 8px 16px;
+    border-radius: 999px;
+    background-color: #0b80ee;
+    color: white;
+    font-weight: 600;
+    font-size: 0.875rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  
+  .uploadBtn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  .suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+    /* margin-bottom: 20px; */
+  }
+  
+  .suggestions button {
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    border-radius: 999px;
+    background-color: #f0f2f5;
+    font-weight: 500;
+    font-size: 0.875rem;
+    cursor: pointer;
+    border: none;
+    color: #5d5e5e;
+    font-family: 'DM sans',sans-serif;
+    transition: background-color 0.2s ease;
+  }
+  
+  .suggestions button:hover {
+    background-color: #d0e4f2;
+  }
+  
+  .typingDots span {
+    animation: blink 1s infinite;
+    font-size:19px;
+    margin: 0 2px;
+    /* display: inline-block; */
+  }
+  
+  .typingDots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .typingDots span:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 768px){
+    .chatMain{
+      margin-left: 90px;
+      padding: 0px 90px;
+    }.iconnn{
+      display: none;
+    }
+  }
+  @media(max-width:480px){
+   .chatMain{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0;
+    width: 85%;
+    padding: 10px;
+    margin-left: 70px;
+    /* margin-right: 70px; */
+   }
+   .chatBubbleLeft{
+    width: auto;
+    text-align: left;
+   }
+   .chatBubbleRight{
+    width: auto;
+    text-align: right;
+   }
+   .bubbleContent{
+    text-align: left;
+   }
+   .chatMain{
+    margin-top: 0;
+   }
+    .iconnn{
+      display: none;
+    }
+    /* .chatBubbleLeft {
+      width: 70vw;
+      max-width: 1000px;
+      display: flex;
+      gap: 12px;
+      margin-bottom: 50px;
+    } */
+    .suggestions{
+      display: none;
+    }
+  }
+  @media (min-width: 200px) and (max-width: 390px) {
+    .chatMain{
+      margin-left: 0px;
+      margin-right: 0px;
+      /* padding-right: 0px; */
+      padding-left: 0;
+      width: 82%;
+      padding: 10px;
+      margin-left: 70px;
+      /* margin-right: 70px; */
+     }
+     .chatHeading {
+      font-size: 20px;
+     }
+  }

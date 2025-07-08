@@ -1,0 +1,165 @@
+.job-details-container {
+    width: 90vw;
+    margin-top: 100px;
+    padding: 1.25rem 10rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .layout-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    flex: 1;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .breadcrumb a,
+  .breadcrumb span {
+    color: #60768a;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .breadcrumb .active {
+    color: #111518;
+  }
+  
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #dbe1e6;
+
+  }
+  
+  .job-title-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 18rem;
+    gap: 0.75rem;
+    
+  }
+  
+  .job-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #111518;
+  }
+  
+  .job-meta {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #60768a;
+  }
+  
+
+  
+  
+  
+  .tab.active-tab {
+    color: #111518;
+    border-bottom: 3px solid #111518;
+  }
+  .container-applicants{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .applicants-heading {
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: #111518;
+    padding: 0.8rem 1rem 0.75rem;
+  }
+  .buttons-applicants{
+    margin-bottom: 40px;
+    display: flex;
+    gap: 60px;
+  }
+  .buttons-applicants button{
+    font-family: 'work Sans',sans-serif;
+    font-size: 15px;
+    background-color: #111518;
+    color: #dbe1e6;
+    transition: all 0.3s ease;
+    outline: none;
+    border: none;
+  }
+  .buttons-applicants button:hover{
+    color: #111518;
+    background-color: #dbe1e6;
+  }
+  .applicant-card {
+    padding: 0.7rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    /* border-bottom: 1px black solid; */
+  }
+  .applicant-details button{
+    margin-top: 20px;
+    font-size: 13px;
+    margin-right: 20px;
+    transition: all 0.2s ease;
+    outline: none;
+    border: none;
+  }
+  .applicant-details button:hover{
+    background-color: #dfdfe4;
+  }
+  .applicant-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.75rem;
+  }
+  
+  .applicant-name {
+    color: #111518;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .applicant-info {
+    font-size: 0.875rem;
+    color: #60768a;
+    font-weight: normal;
+  }
+  .applicant-info2{
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #60768a;
+    font-weight: normal;
+    transition: 0.2s all ease;
+  }
+  .applicant-info2:hover{
+    color: black;
+  }
+  .applicant-pfp img{
+    width: 155px;
+    height: 135px;
+    margin-top: 5px;
+    border-radius: 20px;
+  }

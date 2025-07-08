@@ -1,0 +1,177 @@
+.filters {
+    width: 460px;
+    padding: 16px 0px;
+    /* padding-top: 60px; */
+    /* padding-left: 36px; */
+    background: #fff;
+    /* border-radius: 10px; */
+    height: 100vh;
+    /* margin-top: 145px; */
+     position: fixed;
+     opacity: 1;
+     top: 0;
+     right: 0;
+     transform: translate(0px);
+     transition: all 0.3s ease-in-out;
+     z-index: 1000;
+    /* margin-left: 1280px;  */
+    /* position: relative; */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+  .filters::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+ 
+  .filters.hide {
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .connections{
+    margin-top: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+.connectbuttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .connectbuttons button {
+    position: relative;
+    background-color: transparent;
+    font-family: 'DM Sans';
+    color: #363636;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0px;
+  }
+  
+  /* Underline effect */
+  .connectbuttons button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2.5px;
+    width: 0%;
+    background-color: #000;
+    transition: width 0.3s ease;
+  }
+  
+  /* Active button */
+  .connectbuttons button.active::after {
+    width: 100%;
+  }
+  .noapph3{
+    font-family: 'DM Sans';
+    margin-top: 100px;
+    font-size: 19px;
+    color: #888;
+  }
+  .noappimg{
+    width: 200px;
+  }
+  
+  .connectcardcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 85%;
+    margin-top: 30px;
+  }
+
+.card2 {
+    /* width: 320px; */
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #fff;
+    border: #f1eeee 1px solid;  
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .topSection {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .nouser{
+    color: #888;
+    background-color: #eaeaea;
+    padding: 23px;
+    font-size: 24px;
+   border-radius: 50%;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    align-items: center;
+    font-size: 13px;
+    color: #555;
+    margin-top: 4px;
+  }
+  
+  .icon {
+    color: #888;
+    font-size: 13px;
+  }
+  
+  .gem {
+    margin-left: 8px;
+    color: #8a2be2;
+  }
+  .about{
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .about p{
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .card2 p{
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .bottomSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-top: 4px;
+  }
+  @media (max-width:390px){
+    .filters{
+     width: 480px;
+     padding-left: 90px;
+    }
+    .connectcardcontainer{
+      width: 85%;
+    }
+   }

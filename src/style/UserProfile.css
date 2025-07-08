@@ -1,0 +1,266 @@
+ .app-container {
+    margin-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    transition: all 0.2s ease-in;
+  }
+  
+  .profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px 160px;
+  }
+  
+  .content-container {
+    max-width: 960px;
+    width: 100%;
+  }
+  
+  .profile-header {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .profile-header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .profile-info {
+    display: flex;
+    gap: 16px;
+  }
+
+  .profile-pic-large img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .profile-name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111518;
+  }
+  
+  .profile-title,
+  .profile-location {
+    font-size: 16px;
+    color: #60768a;
+  }
+  
+  
+  .profile-tabs {
+    padding-bottom: 12px;
+    flex: 1;
+  }
+  
+  .tabs-container {
+    display: flex;
+    border-bottom: 1px solid #dbe1e6;
+    padding: 0 16px;
+    gap: 32px;
+  }
+  .profile-tabs-containerr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .profile-tabs-containerr .icon2{
+    font-size: 20px;
+    color: black;
+  }
+  .tab-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0 13px;
+    border-bottom: 3px solid transparent;
+    color: #60768a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .tab-link:hover{
+    color: black;
+  }
+  .tab-link.active {
+    border-bottom: 3px solid #111518;
+    color: #111518;
+  }
+  
+  .profile-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111518;
+    padding: 10px 16px 10px;
+  }
+  
+  .section-text {
+    font-size: 16px;
+    color: #111518;
+    padding: 4px 16px 12px;
+  }
+  
+  .details-grid {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    gap: 24px;
+  }
+  
+  .grid-item {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: subgrid;
+    border-top: 1px solid #dbe1e6;
+    padding: 20px 0px 0px;
+  }
+  
+  .grid-label {
+    font-size: 14px;
+    color: #60768a;
+  }
+  
+  .grid-value {
+    font-size: 14px;
+    color: #111518;
+  }
+  
+  .subsection-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111518;
+    padding: 16px 16px 8px;
+  }
+  
+  .experience-item {
+    display: flex;
+    gap: 30px;
+    padding: 12px 16px;
+    background-color: #fff;
+  }
+  
+  .experience-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .experience-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .experience-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #111518;
+  }
+  
+  .experience-duration,
+  .experience-company {
+    font-size: 14px;
+    color: #60768a;
+  }
+  
+  .achievement-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    min-height: 56px;
+  }
+  
+  .achievement-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .achievement-text {
+    font-size: 16px;
+    color: #111518;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .skills-container {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .skill-item {
+    height: 32px;
+    padding: 0 16px;
+    margin-bottom: 20px;
+    border-radius: 9999px;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skill-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111518;
+  }
+  
+  @media (max-width: 520px) {
+    .main {
+      padding: 20px 40px;
+    }
+  
+    .profile-header-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .connect-button {
+      width: 100%;
+    }
+  }

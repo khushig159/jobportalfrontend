@@ -1,0 +1,42 @@
+.charts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    overflow-x: hidden; /* no need to hide y overflow here */
+  }
+  .chart-box {
+    flex: 1 1 45%;
+    min-width: 300px;
+    max-height: 340px; /* force a reasonable height */
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    position: relative;
+  }
+  .chart-box::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .chart-box {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .chart-box h4 {
+    margin-bottom: 1.5rem;
+    margin-top:1rem;
+    margin-left:1rem;
+    font-size: 1rem;
+    color: #333;
+  }
+  .chart-wrapper{
+    height:250px;
+    overflow: hidden;
+  }
+  .recharts-tooltip-wrapper {
+    z-index: 1;
+  }
+  

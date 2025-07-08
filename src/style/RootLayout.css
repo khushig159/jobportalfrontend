@@ -1,0 +1,14 @@
+.root-layout {
+    display: flex;
+    /* height: 100vh; */
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .main-content2 {
+    /* flex-grow:1 ; */
+    /* background-color: #f9f9f9; */
+    /* padding: 20px; */
+    overflow-y: auto;
+    /* width:70%; */
+  }
+  
