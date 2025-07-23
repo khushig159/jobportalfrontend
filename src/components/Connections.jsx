@@ -186,7 +186,7 @@ export default function Connections({ show, onClose }) {
                         />
                       ) : (
                         <img
-                          src={`${import.meta.env.VITE_API_URL}/${u.profilephoto}`} // Sample image
+                          src={u.profilephoto} // Sample image
                           alt="Felix Lee"
                           className={styles.avatar}
                         />
@@ -276,7 +276,7 @@ export default function Connections({ show, onClose }) {
                         />
                       ) : (
                         <img
-                          src={`${import.meta.env.VITE_API_URL}/${u.profilephoto}`} // Sample image
+                          src={u.profilephoto}// Sample image
                           alt="Felix Lee"
                           className={styles.avatar}
                         />
@@ -382,7 +382,7 @@ export default function Connections({ show, onClose }) {
                         />
                       ) : (
                         <img
-                          src={`${import.meta.env.VITE_API_URL}/${u.profilephoto}`} // Sample image
+                          src={u.profilephoto}// Sample image
                           alt="Felix Lee"
                           className={styles.avatar}
                         />

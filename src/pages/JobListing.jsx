@@ -134,8 +134,8 @@ export default function JobListing() {
               undone.
             </p>
             <div className={styles.modalbutton}>
-              <button onClick={() => setIsModalOpen(false)}>Cancel</button>
-              <button onClick={onConfirm} className="confirm-btn">
+              <button style={{border:'none',outline:'none'}} onClick={() => setIsModalOpen(false)}>Cancel</button>
+              <button style={{border:'none',outline:'none'}} onClick={onConfirm} className="confirm-btn">
                 Delete
               </button>
             </div>
@@ -183,7 +183,7 @@ export default function JobListing() {
                             <>
                               <img
                                 className={styles.logoimage}
-                                src={`${import.meta.env.VITE_API_URL}/${job.postedBy?.companyLogo}`}
+                                src={job.postedBy?.companyLogo}
                                 alt=""
                               />
                             </>

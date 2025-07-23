@@ -128,7 +128,7 @@ const AppliedJobs = () => {
                       ) : (
                         <>
                           <img
-                            src={`${import.meta.env.VITE_API_URL}/${job.postedBy.companyLogo}`}
+                            src={job.postedBy.companyLogo}
                             alt=""
                           />
                         </>

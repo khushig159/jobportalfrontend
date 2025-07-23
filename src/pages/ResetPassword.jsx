@@ -84,7 +84,7 @@ export default function ResetPassword() {
            {message && (
              <p className={error ? styles.errorMsg : styles.successMsg}>{message}</p>
            )}
-           <button type="submit" className={styles.button}>Reset password</button>
+           <button type="submit" style={{border:'none',outline:'none'}} className={styles.button}>Reset password</button>
          </form>
          </>
          ): (<p className={styles.errorMsg}>{message}</p>)}

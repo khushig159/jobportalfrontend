@@ -238,7 +238,7 @@ export default function HomePageRecruiter() {
                       <div className={styles.footer2}>
                         <p className={styles.rate}> Status : {app.status}</p>
                         <a
-                          href={`${import.meta.env.VITE_API_URL}/${app.resumeUrl}`}
+                          href={app.resumeUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -264,7 +264,7 @@ export default function HomePageRecruiter() {
                     ) : (
                       <>
                         <img
-                          src={`${import.meta.env.VITE_API_URL}/${profile?.companyLogo}`}
+                          src={profile?.companyLogo}
                           alt=""
                         />
                       </>

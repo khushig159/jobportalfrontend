@@ -366,7 +366,7 @@ export default function Applicants() {
                       </span>
                       <span className={styles.rate}>
                         <a
-                          href={`${import.meta.env.VITE_API_URL}/${u.applicant.resumeUrl}`}
+                          href={u.applicant.resumeUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                         >

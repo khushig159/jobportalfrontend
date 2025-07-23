@@ -58,7 +58,7 @@ export default function ForgotPassword() {
                   {message && (
                     <p className={error ? styles.errorMsg : styles.successMsg}>{message}</p>
                   )}
-                  <button type="submit" className={styles.button}>Submit</button>
+                  <button style={{border:'none',outline:'none'}} type="submit" className={styles.button}>Submit</button>
                 </form>
                <Link to='/recruiter-login'><p className={styles.backLink}>← Back to Login</p></Link> 
               </div>

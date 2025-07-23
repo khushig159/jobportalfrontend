@@ -165,7 +165,7 @@ export default function UsersProfiles() {
         ) : (
           <img
             className={styles.profileImage}
-            src={`${import.meta.env.VITE_API_URL}/${profile.profilephoto}`}
+            src={profile.profilephoto}
             // alt="profile"
           />
         )}

@@ -176,13 +176,15 @@ const ChatComponent = ({ currentUserId, chatWithUserId, show, onClose }) => {
             placeholder="Type your message"
             style={{ width: "70%", padding: "5px" }}
           />
-          <button
+          <button 
             onClick={sendMessage}
             style={{
               marginLeft: 5,
               fontFamily: "DM sans",
               color: "#888",
               fontSize: "15px",
+              border:'none',
+              outline:'none'
             }}
           >
             Send

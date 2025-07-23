@@ -74,7 +74,7 @@ export default function UserProfile() {
         ) : (
           <img
             className={styles.profileImage}
-            src={`${import.meta.env.VITE_API_URL}/${profile.profilephoto}`}
+            src={profile.profilephoto}
             // alt="profile"
           />
         )}
@@ -119,7 +119,7 @@ export default function UserProfile() {
           <div className={styles.buttons} style={{width:'100%'}}>
             <button style={{color:'#fff'}}>
               <a
-                href={`${import.meta.env.VITE_API_URL}/${profile.resumeUrl}`}
+                href={profile.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 
@@ -144,7 +144,7 @@ export default function UserProfile() {
         <div className={styles.buttons2} style={{width:'100%'}}>
             <button>
               <a
-                href={`${import.meta.env.VITE_API_URL}/${profile.resumeUrl}`}
+                href={profile.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{color:'white'}}

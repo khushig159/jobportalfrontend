@@ -12,7 +12,7 @@ const JobCard = ({ job, savedJobIds, appliedJobIds, handleSave, handleunsave, ha
           {!job.postedBy.companyLogo.trim() ? (
             <FontAwesomeIcon icon={faBriefcase} className={styles.iconnn} />
           ) : (
-            <img src={`${import.meta.env.VITE_API_URL}/${job.postedBy.companyLogo}`} alt="" />
+            <img src={job.postedBy.companyLogo} alt="" />
           )}
 
           <div className={styles.innerheadercontent}>

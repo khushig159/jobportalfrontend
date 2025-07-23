@@ -5,6 +5,8 @@ import "../style/login.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../style/SignUpform.css";
 import logoImage from "../assets/logo.jpg";
+import Cookies from "js-cookie";
+
 import {
   faBrain,
   faBullhorn,
@@ -45,22 +47,26 @@ export default function RecruiterLogin() {
         }
       );
       const data = await response.json();
-     
-      if (response.status !== 200) {
-        addmessage("Failed to login, please try again later");
-      }
       if (response.status === 403) {
         addmessage("Email not registered, please sign up");
+        setloading(false);
       }
       if (response.status === 401) {
         addmessage("Wrong password, please try again");
+        setloading(false);
+        
       }
       if (response.status === 400) {
         addmessage("Please verify your email before logging in.");
+        setloading(false);
       }
       if (!data || !data.userId) {
-        throw new Error("User ID not returned from server");
+        console.log("User not found");
+        setloading(false);
+        return;
       }
+      Cookies.set("recaccessToken", `${data.accesstoken}`, { expires: 1 }); // Set access token with 1 day expiration
+      Cookies.set("recrefreshToken", `${data.refreshtoken}`, { expires: 7 }); // Set refresh token with 7 days expiration
       console.log(data.message);
       setloading(false)
 
@@ -71,6 +77,7 @@ export default function RecruiterLogin() {
 
       return;
     }
+   
     console.log(LoginIndata);
     navigate("/main-recruiter");
   };

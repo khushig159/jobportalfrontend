@@ -216,7 +216,7 @@ export default function Allcandidates() {
                         />
                       ) : (
                         <img
-                          src={`${import.meta.env.VITE_API_URL}/${u.profilephoto}`}
+                          src={u.profilephoto}
                           className={styles.avatar}
                         />
                       )}
@@ -260,7 +260,7 @@ export default function Allcandidates() {
                       <span className={styles.topTalent}>{u.linkedin}</span>
                       <span className={styles.rate}>
                         {u.resumeUrl? (<a
-                          href={`${import.meta.env.VITE_API_URL}/${u.resumeUrl}`}
+                          href={u.resumeUrl}
                           target="_blank"
                           rel="noopener noreferrer"
                         >

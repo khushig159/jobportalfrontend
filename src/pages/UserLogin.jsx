@@ -41,23 +41,26 @@ export default function UserLogin() {
         credentials: "include",
         body: JSON.stringify(LoginIndata),
       });
-      if (!response.ok) {
-        addmessage("Failed to login");
-      }
 
-      if (response.status === 400) {
-        addmessage("Verify your email to continue login");
-      }
-      if (response.status === 403) {
-        addmessage("Email not registered, please sign up");
-      }
-      if (response.status === 401) {
-        addmessage("Wrong password, please try again");
-      }
       const data = await response.json();
-      if (!data || !data.userId) {
-        throw new Error("User not found");
-      }
+
+    if (response.status === 400) {
+      addmessage("Verify your email to continue login");
+      setloading(false);
+    }
+    if (response.status === 403) {
+      addmessage("Email not registered, please sign up");
+      setloading(false);
+    }
+    if (response.status === 401) {
+      addmessage("Wrong password, please try again");
+      setloading(false);
+    }
+    if (!data || !data.userId) {
+      console.log("User not found");
+      setloading(false);
+      return;
+    }
       Cookies.set("useraccessToken", `${data.accessToken}`, { expires: 1 }); // Set access token with 1 day expiration
       Cookies.set("userrefreshToken", `${data.refreshToken}`, { expires: 7 }); // Set refresh token with 7 days expiration
       setloading(false);
@@ -65,7 +68,7 @@ export default function UserLogin() {
     } catch (err) {
       console.log(err.message);
       addmessage(
-        "Internal serbver error, please try again later or check your network connection"
+        "Internal server error, please try again later or check your network connection"
       );
       setloading(false);
       return;

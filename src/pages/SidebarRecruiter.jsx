@@ -33,8 +33,8 @@ export default function Sidebar() {
       console.log(data.message);
   
       // Clear cookies manually (since they were set manually)
-      Cookies.remove("refreshToken", { path: '/' });
-      Cookies.remove("accessToken", { path: '/' });
+      Cookies.remove("recrefreshToken", { path: '/' });
+      Cookies.remove("recaccessToken", { path: '/' });
       navigate("/");
     } catch (error) {
       console.log("Error logging out: " + error.message);

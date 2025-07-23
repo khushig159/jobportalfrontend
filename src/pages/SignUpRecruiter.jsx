@@ -57,15 +57,19 @@ export default function SignUpRecruiter() {
       }
       if (!/^\S+@\S+\.\S+$/.test(formdata.email)) {
         addmessage("Invalid email format");
+        setloading(false); // ✅ stop loader
       }
       if (formdata.password.length < 8) {
         addmessage("Password must be at least 8 characters long");
+        setloading(false);
       }
       if (!formdata.companyLocation) {
         addmessage("Company location is required");
+        setloading(false);
       }
       if (!formdata.industry) {
         addmessage("Industry is required");
+        setloading(false);
       }
       const response = await fetch(
         `${import.meta.env.VITE_API_URL}/auth/signuprecruiter`,
@@ -81,24 +85,15 @@ export default function SignUpRecruiter() {
 
       const data = await response.json();
 
-      if (!response.ok) {
-        let errorMessage = "Failed to sign up";
-        try {
-          const errorData = await response.json();
-          errorMessage = errorData.message || errorMessage;
-        } catch (err) {
-          console.error("Response not JSON:", err);
-        }
-        throw new Error(errorMessage);
-      }
-      if (response.status !== 201) {
-        addmessage("Failed to sign up, please try again");
-      }
+     
       if (response.status === 422) {
         addmessage("Email already exists, please use a different email");
+        setloading(false);
       }
       if (!data || !data.userId) {
-        addmessage("User ID not returned from server");
+        addmessage("failed to sign up, please try again");
+        setloading(false);
+        return;
       }
       console.log(data.message);
       setloading(false)

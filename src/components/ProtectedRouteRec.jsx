@@ -4,7 +4,7 @@ import { Navigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 
 const ProtectedRouterec = ({ children }) => {
-  const refreshToken = Cookies.get('refreshToken');
+  const refreshToken = Cookies.get('recrefreshToken');
   if (!refreshToken) {
     return <Navigate to="/access-deniedrec" />;
   }

@@ -49,12 +49,18 @@ export default function SignUpSeeker() {
       }
       if (!/^\S+@\S+\.\S+$/.test(formdata.email)) {
         addmessage("Invalid email format");
+        setloading(false);  // ✅ stop loader
+        return;      
       }
       if (!/^\d{10}$/.test(formdata.phone)) {
         addmessage("Phone number must be 10 digits long");
+        setloading(false);
+        return; 
       }
       if (formdata.password.length < 8) {
         addmessage("Password must be at least 8 characters long");
+        setloading(false);
+        return; 
       }
       const response = await fetch(`${import.meta.env.VITE_API_URL}/auth/signup-seeker`, {
         method: "POST",
@@ -64,28 +70,25 @@ export default function SignUpSeeker() {
         credentials: "include",
         body: JSON.stringify(formdata),
       });
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || "Failed to sign up");
-      }
-      if (response.status !== 201) {
-       addmessage("Failed to sign up, please try again");
-      }
       if (response.status === 422) {
         addmessage("Email already exists, please use a different email");
+        setloading(false);
       }
       const data = await response.json();
       if (!data || !data.userId) {
         addmessage("User ID not returned from server");
+        setloading(false);
       }
-      console.log(data.message);
-      setloading(false)
-      navigate("/user-login");
-      return data.message;
+      if (response.status === 201 && data && data.userId) {
+        console.log(data.message);
+        setloading(false)
+        navigate("/user-login");
+        return data.message;
+      }
     } catch (error) {
       console.error("Error during form submission:", error);
-      addmessage('Internal serbver error, please try again later or check your network connection');
-      setloading(false)
+      addmessage(error.message || "Internal server error, please try again later or check your network connection");
+      setloading(false);
       return;
     }
   };

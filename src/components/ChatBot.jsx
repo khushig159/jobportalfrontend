@@ -154,7 +154,7 @@ export default function ChatBot() {
        
         <div className={styles.suggestions}>
           {suggestions.map((question, i) => (
-            <button key={i} onClick={() => handleSend(question)}>
+            <button key={i} onClick={() => handleSend(question)} style={{border:'none',outline:'none'}}>
               {question}
             </button>
           ))}
@@ -177,7 +177,7 @@ export default function ChatBot() {
               onChange={(e) => setFile(e.target.files[0])}
             />
           </label>
-          <button className={styles.sendBtn} onClick={() => handleSend()}>
+          <button style={{border:'none',outline:'none'}} className={styles.sendBtn} onClick={() => handleSend()}>
             Send
           </button>
           {file && (
