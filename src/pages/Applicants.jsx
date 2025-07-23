@@ -365,13 +365,12 @@ export default function Applicants() {
                         {u.applicant.linkedin}
                       </span>
                       <span className={styles.rate}>
-                        <a
-                          href={u.applicant.resumeUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                      <button
+                        onClick={()=>window.open(u.applicant.resumeUrl, '_blank')}
+                        style={{backgroundColor:'#fff', fontSize:'12px', fontFamily:'Work sans', color:'#888', border:'none', outline:'none'}}
                         >
                           View Resume
-                        </a>
+                        </button>
                       </span>
                     </div>
                     <div className={styles.statusbutton}>

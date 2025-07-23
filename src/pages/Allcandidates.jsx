@@ -259,13 +259,12 @@ export default function Allcandidates() {
                     <div className={styles.bottomSection}>
                       <span className={styles.topTalent}>{u.linkedin}</span>
                       <span className={styles.rate}>
-                        {u.resumeUrl? (<a
-                          href={u.resumeUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        {u.resumeUrl? (<button
+                        onClick={()=>window.open(u.resumeUrl, '_blank')}
+                        style={{backgroundColor:'#fff', fontSize:'12px', fontFamily:'Work sans', color:'#888', border:'none', outline:'none'}}
                         >
                           View Resume
-                        </a>) : <p>No Resume Uploaded</p>}
+                        </button>) : <p>No Resume Uploaded</p>}
                       </span>
                     </div>
                   </div>

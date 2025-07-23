@@ -237,13 +237,12 @@ export default function HomePageRecruiter() {
 
                       <div className={styles.footer2}>
                         <p className={styles.rate}> Status : {app.status}</p>
-                        <a
-                          href={app.resumeUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <button
+                        onClick={()=>window.open(app.resumeUrl, '_blank')}
+                        style={{backgroundColor:'#fff', fontSize:'12px', fontFamily:'Work sans', color:'#888', border:'none', outline:'none'}}
                         >
                           View Resume
-                        </a>
+                        </button>
                       </div>
                     </div>
                   ))}
