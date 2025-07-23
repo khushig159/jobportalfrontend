@@ -66,7 +66,7 @@ const SavedJobs = () => {
     await PerformJobAction({
       url: `${import.meta.env.VITE_API_URL}/seeker/applyjob/${jobId}`,
       method: "POST",
-      successCallback: () => alert("Applied to job successfully"),
+      // successCallback: () => alert("Applied to job successfully"),
     });
   };
   function getDaysAgo(createdAt) {

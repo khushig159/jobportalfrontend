@@ -260,8 +260,9 @@ export default function Allcandidates() {
                       <span className={styles.topTalent}>{u.linkedin}</span>
                       <span className={styles.rate}>
                         {u.resumeUrl? (<button
-                        onClick={()=>window.open(u.resumeUrl, '_blank')}
-                        style={{backgroundColor:'#fff', fontSize:'12px', fontFamily:'Work sans', color:'#888', border:'none', outline:'none'}}
+                          href={u.resumeUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           View Resume
                         </button>) : <p>No Resume Uploaded</p>}
