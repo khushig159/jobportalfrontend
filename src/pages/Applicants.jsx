@@ -325,7 +325,7 @@ export default function Applicants() {
                   <div className={styles.card2}>
                     <div className={styles.topSection}>
                       <img
-                        src={`${import.meta.env.VITE_API_URL}/${u.applicant.profilephoto}`} // Sample image
+                        src={u.applicant.profilephoto}// Sample image
                         alt="Felix Lee"
                         className={styles.avatar}
                       />

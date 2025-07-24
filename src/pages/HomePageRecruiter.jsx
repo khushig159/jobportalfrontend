@@ -205,7 +205,7 @@ export default function HomePageRecruiter() {
                         )}
                         <img
                           className={styles.avatar2}
-                          src={`${import.meta.env.VITE_API_URL}/${app.applicantProfile}`}
+                          src={app.applicantProfile}
                           alt="Profile"
                         />
                         <div className={styles.info}>
