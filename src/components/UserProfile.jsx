@@ -148,6 +148,7 @@ export default function UserProfile() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{color:'white'}}
+                download
               >
                  Resume
               </a>

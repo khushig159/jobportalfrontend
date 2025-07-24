@@ -326,7 +326,7 @@ export default function Applicants() {
                     <div className={styles.topSection}>
                       <img
                         src={u.applicant.profilephoto}// Sample image
-                        alt="Felix Lee"
+                        // alt="Felix Lee"
                         className={styles.avatar}
                       />
                       <div>

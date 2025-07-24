@@ -263,6 +263,7 @@ export default function Allcandidates() {
                           href={u.resumeUrl}
                           target="_blank"
                           rel="noopener noreferrer"
+                          download
                         >
                           View Resume
                         </button>) : <p>No Resume Uploaded</p>}

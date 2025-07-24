@@ -206,7 +206,7 @@ export default function HomePageRecruiter() {
                         <img
                           className={styles.avatar2}
                           src={app.applicantProfile}
-                          alt="Profile"
+                          // alt="Profile"
                         />
                         <div className={styles.info}>
                           <p className={styles.name}>{app.jobTitle}</p>
