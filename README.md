@@ -68,6 +68,8 @@ With powerful features like **AI-based resume parsing**, **job suggestions**, an
 
 > **Note:** Resume files are stored using **Cloudinary**, a secure and encrypted cloud service.  
 > You may not see the resume previews if access permissions are restricted
+> In AI resume parser as well the resumes are stored in cloudinary, so same issue could perisits
+> Locally use multer for learning how things work 
 
 
 ## 🧰 Tech Stack
@@ -75,10 +77,10 @@ With powerful features like **AI-based resume parsing**, **job suggestions**, an
 | Layer              | Technology                            |
 |--------------------|----------------------------------------|
 | **Frontend**       | React.js, React Router DOM             |
-| **AI Integration** | OpenAI API (custom prompts for domain-limited bot) |
+| **AI Integration** | Gemini API (custom prompts for domain-limited bot) |
 | **State Management** | React Hooks, Context API            |
 | **File Handling**  | FileReader API (for resume upload)     |
-| **Resume Parsing** | Custom JS Parser + OpenAI enhancement |
+| **Resume Parsing** | Custom JS Parser + Gemini enhancement |
 | **Chat**           | Real-time chatbot with prompt routing  |
 | **Styling**        | CSS Modules                           |
 | **Routing**        | Protected & role-based routes         |
@@ -125,7 +127,7 @@ src/
 │   ├── RedirectHandler.jsx
 │   └── UserProfile.jsx
 │
-├── module/                # Sub-components or utility views
+├── pages/                
 │   ├── Allcandidates.jsx
 │   ├── Allusers.jsx
 │   ├── Applicants.jsx
@@ -176,7 +178,7 @@ src/
 │
 ├── App.jsx                # App routing logic
 ├── index.js               # Root render logic
-└── main.jsx               # (Vite entry point, if applicable)
+└── main.jsx               
 
 
 ---
