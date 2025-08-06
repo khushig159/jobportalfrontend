@@ -86,6 +86,20 @@ With powerful features like **AI-based resume parsing**, **job suggestions**, an
 
 ---
 
+## 🚀 Future Enhancements
+- Admin dashboard for platform moderation
+- Email alerts for job applications
+- PDF export for user profile & applications
+- Advanced analytics for recruiters
+- AI interview preparation suggestions
+
+## 🙋‍♀️ About the Developer
+**Khushi Gupta**
+💻 Frontend Developer | 🧠 AI Explorer | 📚 Engineering Student
+📧 khushig1592005@gmail.com
+🔗  www.linkedin.com/in/khushi-gupta-b756bb277
+
+
 ## 🗂️ Project Structure
 
 ```bash
@@ -180,15 +194,4 @@ npm install
 # Step 3: Run the application
 npm start
 
-## 🚀 Future Enhancements
-- Admin dashboard for platform moderation
-- Email alerts for job applications
-- PDF export for user profile & applications
-- Advanced analytics for recruiters
-- AI interview preparation suggestions
 
-## 🙋‍♀️ About the Developer
-**Khushi Gupta**
-💻 Frontend Developer | 🧠 AI Explorer | 📚 Engineering Student
-📧 khushig1592005@gmail.com
-🔗  www.linkedin.com/in/khushi-gupta-b756bb277
